@@ -1,86 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mac-book pro</title>
     <!-- bootstrap  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <div class="container mt-5">
-        <div class="row gx-5">
-            <div class="col-5">
-                <img src="images/mac.png" class="img-fluid" alt="mac-book">
-            </div>
-             <div class="col-7">
-                <h1>Customize your blue 24-inch <br>iMac with apple M1 chip.</h1>
-                <p>It’s here. Our first chip designed specifically for Mac. Packed with an astonishing 16 billion transistors, the Apple M1 system on a chip (SoC) integrates the CPU, GPU, Neural Engine, I/O, and so much more onto a single tiny chip. With incredible performance, custom technologies</p>
-
-                <div class="item">
-                    <h3>Memory</h3>
-                <button class="btn border" id="8GB-memory-btn">8GB unified memory</button>
-                <button class="btn border" id="16GB-memory-btn">16GB unified memory</button>
-                </div>
-
-                <div class="item mt-4">
-                    <h3>Storage</h3>
-                <button class="btn border" id="256GB-ssd-btn">256GB SSD storage</button>
-                <button class="btn border" id="512GB-ssd-btn">512GB SSD storage</button>
-                <button class="btn border" id="1TB-ssd-btn">1TB SSD storage</button>
-                </div>
-                <div class="item mt-4">
-                    <h3>Choose your delivery option</h3>
-                <button class="btn border" id="free-delivery-btn">Friday,Aug 25 FREE Prime Delivery</button>
-                <button class="btn border" id="charge-delivery-btn">Friday,Aug 21 Delivery charge $20</button>
-                </div>
-                <!-- price counting  -->
-                <table class="table my-5">
-                    <tbody>
-                      <tr>
-                        <th scope="col">Best Price</th>
-                        <th scope="col">$<span id="best-price">1299</span></th>
-                      </tr>
-                    
-                    
-                      <tr>
-                        <th scope="row">Extra Memory cost</th>
-                        <th>$<span id="extra-memory-cost">0</span></th>
-                      </tr>
-                      <tr>
-                        <th scope="row">Extra storage cost</th>
-                        <th>$<span id="extra-storage-cost">0</span></th>
-                      </tr>
-                      <tr style="border-bottom: 2px solid #000;">
-                        <th scope="row">Delivery charge</th>
-                        <th>$<span id="delivery-charge">0</span></th>
-                      </tr>
-                      
-                      
-                        <tr> 
-                        <th scope="row">Total Price</th>
-                        <th>$<span id="total-price">1299</span></th>
-                      </tr>  
-                      </tbody>
-
-                     
-                    
-                  </table>
-                  <h4>Add Promo code</h4>
-                  <div class="d-flex mb-5">
-                    <input type="text" class="form-control w-25" id="promo-input">
-                    <button class="btn btn-danger btn-sm" id="promo-btn">Apply</button>
-                  </div>
-            </div> 
+      <div class="row gx-5">
+        <div class="col-5">
+          <!-- product image -->
+          <img src="images/mac.png" class="img-fluid" alt="mac-book" />
         </div>
-    </div>
+        <div class="col-7">
+          <h1>Customize your blue 24-inch <br />iMac with apple M1 chip.</h1>
+          <p>
+            It’s here. Our first chip designed specifically for Mac. Packed with
+            an astonishing 16 billion transistors, the Apple M1 system on a chip
+            (SoC) integrates the CPU, GPU, Neural Engine, I/O, and so much more
+            onto a single tiny chip. With incredible performance, custom
+            technologies
+          </p>
 
-<footer class="text-center">
-    <div class="container" style="border-top:2px solid gray;">
-        <h1 class="py-3">Total: $<span id="final-total">1299</span></h1>
+          <div class="item">
+            <h3>Memory</h3>
+            <button class="btn border" id="8GB-memory-btn">
+              8GB unified memory
+            </button>
+            <button class="btn border" id="16GB-memory-btn">
+              16GB unified memory
+            </button>
+          </div>
+
+          <div class="item mt-4">
+            <h3>Storage</h3>
+            <button class="btn border" id="256GB-ssd-btn">
+              256GB SSD storage
+            </button>
+            <button class="btn border" id="512GB-ssd-btn">
+              512GB SSD storage
+            </button>
+            <button class="btn border" id="1TB-ssd-btn">1TB SSD storage</button>
+          </div>
+          <div class="item mt-4">
+            <h3>Choose your delivery option</h3>
+            <button class="btn border" id="free-delivery-btn">
+              Friday,Aug 25 FREE Prime Delivery
+            </button>
+            <button class="btn border" id="charge-delivery-btn">
+              Friday,Aug 21 Delivery charge $20
+            </button>
+          </div>
+          <!-- price counting  -->
+          <table class="table my-5">
+            <tbody>
+              <tr>
+                <th scope="col">Best Price</th>
+                <th scope="col">$<span id="best-price">1299</span></th>
+              </tr>
+
+              <tr>
+                <th scope="row">Extra Memory cost</th>
+                <th>$<span id="extra-memory-cost">0</span></th>
+              </tr>
+              <tr>
+                <th scope="row">Extra storage cost</th>
+                <th>$<span id="extra-storage-cost">0</span></th>
+              </tr>
+              <tr style="border-bottom: 2px solid #000">
+                <th scope="row">Delivery charge</th>
+                <th>$<span id="delivery-charge">0</span></th>
+              </tr>
+              <tr>
+                <th scope="row">Total Price</th>
+                <th>$<span id="total-price">1299</span></th>
+              </tr>
+            </tbody>
+          </table>
+          <!-- promo code -->
+          <h4>Add Promo code</h4>
+          <div class="d-flex mb-5">
+            <input type="text" class="form-control w-25" id="promo-input" />
+            <button class="btn btn-danger btn-sm" id="promo-btn">Apply</button>
+          </div>
+        </div>
+      </div>
     </div>
-</footer>
+    <!-- final total -->
+    <footer class="text-center">
+      <div class="container" style="border-top: 2px solid gray">
+        <h1 class="py-3">Total: $<span id="final-total">1299</span></h1>
+      </div>
+    </footer>
     <script src="js/app.js"></script>
-</body>
+  </body>
 </html>
