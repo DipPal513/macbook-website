@@ -40,11 +40,11 @@ function calculateTotalCost(){
 }
 //for cupon code
 promoBtn.addEventListener('click',function(){
-        if(promoInput.value = 'stevekaku'){
+        if(promoInput.value == 'stevekaku'){
         const totalPrice = calculateTotalCost();
         console.log(totalPrice)
         const promoCalculation = totalPrice - (totalPrice *20) / 100 
         finalTotal.innerText = promoCalculation;
-        promoInput.value = '';
-     }
-})   
+    }
+    promoInput.value = '';
+});    
